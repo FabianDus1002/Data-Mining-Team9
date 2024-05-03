@@ -1,0 +1,492 @@
+
+		body {
+			width: 100%;
+			margin: 0px;
+			padding: 0px;
+			background-color: #eee;
+		}
+		
+		#wrapper {
+			max-width: 1024px;
+			margin: 0px auto;
+		}
+		
+		header {
+			height: 55px;
+			width: 100%;
+			background-color: #004596;
+		}
+		
+		header img
+		{
+			max-height: 55px;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		
+		header #header_center {
+			margin: 0px auto;
+			height:55px;
+		}
+		
+		#right_header {
+			margin: 0px;
+			padding: 0px;
+			width: 50%;
+			display: inline-block;
+			text-align: right;
+			height:55px;
+			position:absolute;
+			right:20px;
+		}
+		
+		input[type=radio] {
+			width: 15px;
+			height: 15px;
+		}
+		
+		#left_header {
+			margin: 0px;
+			padding: 0px;
+			width: 50%;
+			display: inline-block;
+			text-align: left;
+			height:55px;
+			position:absolute;
+			left:20px;
+		}
+		
+		nav {
+			border-bottom: 2px solid #004596;
+			background-color: #fff;
+			-moz-box-shadow: 0 4px 5px rgba(204,204,204,.8);
+			-webkit-box-shadow: 0 4px 5px rgba(204,204,204,.8);
+			box-shadow: 0 4px 5px rgba(204,204,204,.8);
+			margin-bottom: 1px;
+		}
+		div#content {
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+			font-size: 12px;
+			text-transform: none;
+			background-color: #fff;
+			padding: 10px;
+			min-height: 300px;
+			-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+			margin: 0px auto;
+		}
+		
+		nav #menu {
+			text-align: left;
+			height: 100%;
+			margin: 0px auto;
+		}
+		nav ul {
+			display: inline;
+			text-align: left;
+			margin: 0px;
+			height: 100%;
+			padding: 0px;
+			width: 100%;
+		}
+		
+		nav ul li {
+			height: 100%;
+			vertical-align: top;
+			line-height: 39px;
+			position: relative;
+			display: inline-block;
+			list-style: none;
+		}
+		
+		nav ul li a:hover {
+			color:#004596;
+		}
+		
+		nav>div>ul>li:last-child a {
+			border-right: 1px solid lightgray;
+		}
+		
+		nav ul li a {
+			border-left: 1px solid lightgrey;
+			text-decoration: none;
+			color: #707070;
+			float: none;
+			width: auto;
+			text-align: center;
+			cursor: pointer;
+			height: 39px;
+			padding: 10px 11px 11px 11px;
+			line-height: 25px;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+			font-size: 14px;
+			text-transform: none;
+		}
+		
+		i {
+			font-size: 12px;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+			margin-right: 3px;
+		}
+		
+		nav ul li a:hover, nav>div#menu>ul>li#active>a {
+			color:#004596;
+			background-color: #eee;
+			background-repeat: repeat-x;
+		}
+		
+		footer {
+			max-width: 1024px;
+			margin: 0px auto;
+			color: gray;
+			text-align: center;
+		}
+		fieldset {
+			position: relative;
+		}
+		fieldset.help, fieldset.message{
+			font-weight: normal;
+			font-size: 12px;
+			margin: 7px 0px;
+			border: 1px solid #BBB;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif black;
+			background-color: rgba(255,221,0,0.3) ;/*<!--rgba(0, 69, 150,0.1)-->*/
+			padding: 10px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		fieldset label{
+			font-size: 12px;
+		}
+		
+		/*
+		fieldset.help legend, fieldset.message legend {
+			position: absolute\9;
+			top: -.7em\9;
+			left: .5em\9;
+			background-color: rgba(255,255,255,0.5)\9;
+		}
+		
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   		/* spezifische CSS-Klassen für den IE10 stehen innerhalb dieser media queries 
+   		
+	   		fieldset.help legend, fieldset.message legend {
+				position: absolute;
+				top: -.7em;
+				left: .5em;
+				background-color: rgba(255,255,255,0.5);
+			}
+			
+			form div.formElements span {
+				display: inline-block;
+				vertical-align: top;
+				position: relative;
+				padding-top: 2px;
+				padding-left: 0px
+			}
+		}
+		*/
+		fieldset legend {
+			font-weight: bold;
+			font-family:tahoma,verdana,arial,helvetica,sans-serif;
+			font-size: 13px;
+			background-color: rgba(255,255,255,1);
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;				    
+		    padding: 0px 5px;
+	    	display: inline;		    
+    		position: relative;
+    		top: -5px;	
+		}
+		fieldset > span{
+			display:block;
+		}		
+		fieldset {
+			padding: 10px;
+			padding-top: 0px;
+			border: 1px solid;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		fieldset + fieldset.message,
+		fieldset + fieldset.help {
+			margin-top: 14px;
+		}
+		
+		label.dispLabelBold {
+			text-align: right;
+			width: 300px;
+			padding-right: 10px;
+			display:inline-block;
+		}
+		fieldset.info>label {
+			line-height: 18px;
+			vertical-align: bottom;
+			padding-left: 5px;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif black;
+		}
+		
+		fieldset.info {
+			padding-top: 10px;
+			margin-top: 10px;
+		}
+		
+		table.datatable th{
+			text-align: left;
+			padding-bottom: 5px;
+		}
+		
+		table.datatable td {
+			vertical-align: top;
+		}
+		
+		div#linkBox {
+			color: #000;
+			line-height: 24px;
+			margin-top: 10px;
+			margin-left: 315px;
+		}
+		
+		div#linkBox a {
+			color: #000;
+		}
+		
+		input.button {
+			background-color: rgba(0, 69, 150,0.1);
+			padding: 4px 8px;
+			border-radius: 5px;
+			border: 1px solid gray;
+			cursor: pointer;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif;
+			font-size: 12px !important;
+		}
+		
+		input.button:hover {
+			background-color: #004596;
+			color: white;
+		}
+		
+		.dataTables_wrapper{
+			margin-top: 10px;
+		}
+		
+		
+		table.datatable td {
+			word-break: normal;
+		}
+		
+		table.datatable a{
+			color: #000;
+			text-decoration: none;
+		}
+		
+		form {
+			padding:0px 0px;
+		}
+		
+		form label {
+			line-height: 22px;
+			vertical-align: top;
+			width: 200px;
+			display: inline-block;
+		}
+		form div label {
+            width: auto;
+            padding-left: 4px;
+        }
+		form select, form input[type=text] {
+			padding-right: 3px;
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 5px;
+			border-color: #999;
+			padding-left: 3px;
+			min-width: 40px;
+			padding-top: 1px;
+			padding-bottom: 1px;
+			height:	20px;
+			margin-left: 0px;
+			max-width:300px;
+			display: inline-block;
+		}
+		
+		form select option {
+		    background: #fff; /* style the dropdown bg color */
+		}
+		
+		form div.formElements {
+			display: inline-block;
+			line-height: 22px;
+			height: 22px;
+			width: calc(100% - 220px);
+		}
+		
+		form div.formRadioBlock {
+			line-height: 23px !important;
+		}
+		
+		a img {
+			border: none;
+		}
+		
+		form div.formElements input[type=radio] {
+			vertical-align: middle; margin: 0px;
+		}
+		
+		form div.formElements span {
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			padding-top: 0px;
+			padding-top: 2px\9;
+			padding-left: 0px\9;
+			padding-left: 5px;
+		}
+		
+		fieldset.infobox {
+			background-color: #E6EDF5 !important;
+		}
+		
+		fieldset#labelDescription>a{
+			line-height: 25px;
+			color: #000;
+			display: inline-block;
+			vertical-align: top;
+			width: 300px;
+			text-align: right;
+		}
+		
+		fieldset#labelDescription>span{
+			line-height: 25px;
+			display: inline-block;
+			vertical-align: top;
+			width: 690px;
+			padding-left: 10px;
+		}
+		
+		h3 {
+			font-family:tahoma,verdana,arial,helvetica,sans-serif;
+			color:#004596;
+			font-size: 13px;
+			margin-left: 3px;
+			border-bottom: 1px solid #004596;
+			padding-bottom: 1px;
+		}
+		
+		div#world-map {
+			margin-top: 15px;
+			padding: 10px 0px;
+			height: 770px;
+			max-width: 995px;
+			width: 100%;
+			text-align: center;
+		}
+		div#world-map svg{
+			max-width: 995px !important; 
+			width: 100% !important; 
+		}
+		circle {
+			cursor: pointer;
+		}
+		
+		a {
+			color: #000;
+		}
+		
+		div#languageBox {
+			width: 100%;
+			text-align: right;
+		}
+
+		select.error {
+			border: 1px solid red;
+		}
+		
+		input[type=radio].error {
+			outline: 1px solid red;
+		}
+		
+		
+		div#loading_image {
+			background: transparent;
+			display: none;
+		}
+		th.ui-state-default{
+    		background: #A4BEDD url("images/ui-bg_highlight-soft_95_a4bedd_1x100.png") repeat-x scroll 50% 50%;
+			border: 1px solid #cccccc;
+		}
+		.ui-widget-header {
+   			 border: none;
+		}
+		.colLabel
+		{
+			padding-right: 2px;
+			text-align: right;
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif black;
+			font-size: 12px !important;
+		}
+		.ui-widget, .ui-widget-content, .ui-menu-item, .ui-menu-item a, .count-field, .formElements span, .formElements a
+		{
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif black;
+			font-size: 12px !important;
+		}
+		button.ui-button-icon-only { width: 18px }
+		.formRow {		
+			background: rgb(0, 69, 150); /* Old browsers */
+			background: -moz-linear-gradient(left,  #E6EDF5 0%, rgba(0, 69, 150,0.1) 20.35%, #E6EDF5 20.35%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, right top, color-stop(0%,#E6EDF5), color-stop(20.35%,#E6EDF5), color-stop(20.35%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(left,  #E6EDF5 0%,rgba(0, 69, 150,0.1) 20.35%,rgba(255,255,255,0) 20.35%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(left,  #E6EDF5 0%,rgba(0, 69, 150,0.1) 20.35%,rgba(255,255,255,0) 20.35%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(left,  #E6EDF5 0%,rgba(0, 69, 150,0.1) 20.35%,rgba(255,255,255,0) 20.35%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(to right,  #E6EDF5 0%,rgba(0, 69, 150,0.1) 20.35%,rgba(255,255,255,0) 20.35%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E6EDF5', endColorstr='#E6EDF5',GradientType=1 ); /* IE6-9 */
+		}
+		
+		.google_map
+		{
+			margin-top: 10px;
+    		margin-bottom: 10px;
+		}
+		
+				.ui-widget, .ui-widget-header, .ui-widget-content, .ui-menu-item, .ui-menu-item a, .count-field, .formElements span, .formElements a
+		{
+			font-family: Tahoma,Verdana,Arial,Helvetica,sans-serif black;
+			font-size: 12px !important;
+		}
+		
+		.ui-widget-header
+		{
+			border: black;
+		}
+		
+		.progSubTitle .dataTables_length select
+		{
+			border: none;
+			margin-top: 2px;
+		}
+		
+		.paging_full_numbers .ui-button{color: black;}
+		
+		.paging_full_numbers .ui-button.ui-state-disabled{color: rgba(0,0,0,0.5);}
+		
+		.ui-state-default, button.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default 
+		{
+		    background: transparent;
+		}
+		
+		.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default 
+		{
+		    border: none;
+		}
+		
+		table.dataTable thead th div.DataTables_sort_wrapper
+		{
+			font-size: 12px;
+		}
